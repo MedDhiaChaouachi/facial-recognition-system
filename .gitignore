@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.npy
+data/embeddings/
+models/
+db.sqlite3

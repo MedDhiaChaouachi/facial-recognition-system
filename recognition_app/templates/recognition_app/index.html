@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facial Recognition</title>
+  </head>
+  <body>
+    <h1>Upload an Image for Facial Recognition</h1>
+    <form
+      action="{% url 'recognize' %}"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}
+      <input type="file" name="file" accept="image/*" required />
+      <button type="submit">Recognize</button>
+    </form>
+  </body>
+</html>
