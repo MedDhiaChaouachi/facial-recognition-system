@@ -4,3 +4,4 @@ __pycache__/
 data/embeddings/
 models/
 db.sqlite3
+venv/
